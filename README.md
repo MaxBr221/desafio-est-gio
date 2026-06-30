@@ -1,61 +1,34 @@
-# Desafio Técnico — Banco 🏦
+# Desafio Técnico - Sistema Bancário Fullstack
 
-Bem-vindo(a) ao desafio técnico do **Processo Seletivo Agilize — Estágio em Tecnologia**!
+Esta é uma aplicação bancária fullstack desenvolvida para o processo seletivo de Estágio em Tecnologia. O sistema simula operações de contas correntes e poupanças, aplicando taxas de transação e validações de cheque especial em tempo real.
 
-Este desafio avalia sua capacidade de transformar **regras de negócio** em um sistema **fullstack**
-funcional, bem organizado e fácil de executar.
+## 🛠️ Tecnologias e Versões
 
-> 📄 **A especificação completa está no arquivo [`ESPECIFICACAO.pdf`](./ESPECIFICACAO.pdf).** Leia-a com atenção antes de começar.
->
-> ⏰ **Prazo:** 2 dias corridos — entrega até **00h de 30/06**.
+* **Backend:** Node.js (v24.14.1) com TypeScript e Express.
+* **Frontend:** HTML5, CSS3 e JavaScript (ES6+) estruturados de forma isolada.
 
----
+## 📦 Pré-requisitos e Dependências
 
-## 🎯 Resumo
-
-Construa um **Banco** sobre dois tipos de conta (corrente e poupança), respeitando as regras de negócio
-da especificação. A operação **obrigatória** é o **saque**; a **transferência** é **opcional** e conta
-como diferencial.
-
-A solução deve ter **duas partes que se comunicam**:
-
-- **Backend (API):** expõe uma API HTTP com as operações (toda a regra de negócio fica aqui).
-- **Frontend:** uma interface web que consome a API e permite realizar as operações e ver os resultados.
-
-## 💻 Linguagens aceitas (backend)
-
-`JavaScript (Node.js)` · `TypeScript (Node.js)` · `Python` · `Ruby` · `PHP` · `Go`
-
-> O **frontend** pode usar HTML/CSS/JavaScript, com ou sem framework.
+Você precisará ter instalado em sua máquina:
+* **Node.js** (Versão estável 18 ou superior / Testado na v24.14.1)
+* Um navegador web moderno (Chrome, Edge, Firefox, etc.)
 
 ---
 
-## 🚀 Como participar
+## 🚀 Passo a Passo para Execução
 
-1. Faça um **fork** deste repositório.
-2. Implemente **backend** e **frontend** no fork (backend em uma das linguagens aceitas).
-3. **Preencha o README** do seu fork seguindo o modelo em [`SUBMISSION.md`](./SUBMISSION.md)
-   (linguagem, pré-requisitos e **passo a passo para subir backend e frontend**).
-4. Faça **commits ao longo do desenvolvimento** — evite um único commit gigante no final.
-5. Envie o **link do seu fork** para **calison@agilize.com.br**.
+Siga rigorosamente as etapas abaixo para rodar e testar o backend e o frontend juntos:
 
----
+### 1. Inicializar o Backend (API)
 
-## ⚠️ Critério eliminatório
+Abra o seu terminal na raiz do projeto e execute os comandos:
 
-> Projetos que **não executarem** seguindo o README — ou cujo README não permita rodar **backend e
-> frontend** — serão **eliminados**. Backend fora das linguagens aceitas também elimina.
->
-> **Teste o passo a passo em uma máquina/pasta limpa antes de enviar.**
+```bash
+# Entrar na pasta do servidor
+cd backend
 
----
+# Instalar todas as dependências necessárias
+npm install
 
-## ✅ O que será avaliado
-
-- **Funcionamento** — backend e frontend rodam, se comunicam e cumprem as regras de negócio.
-- **Qualidade do código** — clareza, organização, separação de responsabilidades, sem duplicação.
-- **Processo** — histórico de commits coerente e README claro.
-
-Dúvidas: **calison@agilize.com.br**
-
-Boa sorte! 🍀
+# Iniciar o servidor em ambiente de desenvolvimento
+npm run dev
